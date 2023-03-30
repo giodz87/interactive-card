@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <img class="main-back" src="./images/bg-main-desktop.png" alt="" />
+      <div class="card">
+        <img class="front-card" src="./images/bg-card-front.png" alt="" />
+        <div class="front">
+          <img class="front-logo" src="./images/card-logo.svg" alt="" />
+        </div>
+        <span id="long-num" class="front-number">0000 0000 0000 0000</span>
+        <div class="main-num">
+          <div class="main-date">
+            <p id="name-card" class="front-name">JANE APPLESEED</p>
+            <div class="front-date">
+              <span id="mm-num">00</span>
+              <span>/</span>
+              <span id="yy-num">00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="back-img">
+        <img class="back-card" src="./images/bg-card-back.png" alt="" />
+        <span id="back-cvc" class="back-number">000</span>
+      </div>
+    </nav>
+    <section id="text-input">
+      <div id="card-name">
+        <label class="name" for="text">Cardholder Name </label>
+        <input
+          id="main-text"
+          class="main-input"
+          placeholder="e.g. Jane Appleseed"
+          type="text"
+          maxlength="20"
+          required
+        />
+      </div>
+      <div class="card-number">
+        <label class="name" for="number">Card Number </label>
+        <input
+          id="num-number"
+          class="main-input"
+          placeholder="e.g. 1234 5678 9123 0000"
+          type="text"
+          maxlength="16"
+          required
+        />
+        <p id="wrong-id" class="wrong"></p>
+      </div>
+      <div class="date">
+        <div class="exp-date">
+          <label class="name" for="number">Exp. Date (MM/YY) </label>
+          <div class="mm">
+            <div class="lola">
+            <input
+              id="number"
+              class="yy"
+              placeholder="MM"
+              type="text"
+              maxlength="2"
+              required
+            />
+            <p id="mm-yy" class="wrong"></p>
+          </div>
+           <div class="lola">
+            <input
+              class="yy"
+              id="yy-number"
+              placeholder="YY"
+              type="text"
+              maxlength="2"
+              required
+            />
+            <p id="yy-mm" class="wrong"></p>
+          </div>
+          </div>
+          
+          
+        </div>
+        <div class="cvc">
+          <label class="name" for="number">CVC </label>
+          <input
+            id="cvc-number"
+            class="eg-number"
+            placeholder="e.g. 123"
+            type="text"
+            maxlength="3"
+            required
+          />
+          <p id="mm-yy-cvc" class="wrong"></p>
+        </div>
+      </div>
+      <div class="btn">
+        <button id="confirm" >Confirm</button>
+      </div>
+    </section>
+    <section id="your-details">
+      <div class="card-details">
+        <img src="./images/icon-complete.svg" alt="" />
+        <h1>THANK YOU!</h1>
+        <p class="your-card">We’ve added your card details</p>
+        <div class="btn">
+          <button ">Confirm</button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700&family=Space+Grotesk:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+nav {
+  position: absolute;
+  top: 0;
+}
+.main-back {
+  position: absolute;
+  top: 0;
+  left: -57px;
+  width: 387px;
+  height: 240px;
+}
+.back-img {
+  position: relative;
+  transform: translateY(-15px);
+}
+.back-card {
+  width: 286px;
+  height: 157px;
+  left: 30px;
+  position: relative;
+}
+.back-number {
+  position: absolute;
+  right: 0;
+  padding-top: 73px;
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 11px;
+  text-align: right;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.card {
+  position: relative;
+  transform: translate(-40px, 125px);
+  z-index: 1;
+}
+.front-card {
+  position: absolute;
+  z-index: 0;
+  width: 285px;
+  height: 156.21px;
+  left: 20px;
+}
+.front {
+  position: absolute;
+  padding-top: 18px;
+  padding-left: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.front-logo {
+  width: 50px;
+  height: 30px;
+  position: relative;
+  left: 20px;
+}
+.main-num {
+  position: relative;
+  z-index: 1;
+  top: 84px;
+  padding-top: 22px;
+}
+.front-number {
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 2.2px;
+  color: #ffffff;
+  padding-left: 40px;
+  position: absolute;
+  padding-top: 80px;
+}
+.main-date {
+  display: flex;
+  flex-direction: row;
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-left: 19px;
+  padding-top: 17px;
+}
+.front-date {
+  position: absolute;
+  right: 17px;
+}
+.lola {
+  width: 85px;
+}
+.mm {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.wrong {
+  overflow: hidden;
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  color: #ff5050;
+  width: 165px;
+  height: 15px;
+}
+.front-name {
+  position: absolute;
+  left: 40px;
+}
+section {
+  padding-top: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 14px;
+}
+
+#card-name {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.name {
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #21092f;
+}
+input[class="main-input"] {
+  background: #ffffff;
+  border: 2px solid #dfdee0;
+  border-radius: 8px;
+  width: 327px;
+  height: 45px;
+  padding: 0px 0px 0px 14px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #21092f;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+.card-number {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 20px;
+}
+.exp-date {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[class="yy"] {
+  background: #ffffff;
+  border: 1px solid #dfdee0;
+  border-radius: 8px;
+  width: 72px;
+  height: 45px;
+  padding: 0px 0px 0px 14px;
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #21092f;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+.cvc {
+  display: flex;
+  flex-direction: column;
+}
+input[class="eg-number"] {
+  background: #ffffff;
+  border: 1px solid #dfdee0;
+  border-radius: 8px;
+  width: 160px;
+  height: 45px;
+  padding: 0px 0px 0px 14px;
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #21092f;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+.date {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+
+.btn {
+  padding-top: 28px;
+}
+button {
+  background: #21092f;
+  border-radius: 8px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  width: 327px;
+  height: 53px;
+}
+#your-details {
+  display: none;
+}
+.card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 280px;
+  margin-top: 50px;
+}
+h1 {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 3.42222px;
+  color: #21092f;
+}
+.your-card {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #8f8694;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////
+                                            @media (min-width: 1210px) 
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+@media (min-width: 1210px) {
+  nav {
+    top: 0;
+    left: 0;
+  }
+  .main-back {
+    width: 483px;
+    height: 100vh;
+  }
+  .card {
+    position: relative;
+    transform: translate(118px, 91px);
+    z-index: 1;
+  }
+  .front-card {
+    width: 447px;
+    height: 245px;
+  }
+  .front-logo {
+    width: 80px;
+    height: 49px;
+  }
+  .front-number {
+    padding-top: 130px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .main-num {
+    top: 139px;
+  }
+  .main-date {
+    font-size: 14px;
+    line-height: 42px;
+  }
+  .back-img {
+    left: 170px;
+    top: 300px;
+  }
+  .back-card {
+    width: 447px;
+    height: 245px;
+    margin-top: 50px;
+  }
+  .back-number {
+    font-size: 14px;
+    line-height: 18px;
+    right: 22px;
+    top: 89px;
+  }
+  section {
+    position: absolute;
+    left: 800px;
+    top: -125px;
+  }
+  input[class="main-input"] {
+    width: 381px;
+  }
+  input[class="yy"] {
+    width: 80px;
+  }
+  input[class="eg-number"] {
+    width: 200px;
+  }
+  .btn {
+    padding-top: 40px;
+  }
+  button {
+    width: 381px;
+  }
+  .wrong {
+    font-size: 12px;
+  }
+  .lola {
+    width: 90px;
+  }
+}
